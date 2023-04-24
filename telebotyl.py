@@ -58,7 +58,7 @@ def allGame(message):
                                       'Assassin’s Creed Unity (/AssassinsCreedUnity)\n'
                                       'Dark Souls II (/DarkSoulsII)\n'
                                       'Alien: Isolation (/Alien:Isolation)\n'
-                                      '')
+                                      'А также одна тайная команда.')
 
 
 @bot.message_handler(commands=['game_rating'])
@@ -151,6 +151,13 @@ def send_Metro2033_info(message):
                           "одноимённого романа российского писателя Дмитрия Глуховского.")
 
 
+@bot.message_handler(commands=['dotaTrue'])
+def send_TrueAboutDota_info(message):
+    bot.reply_to(message, 'Это не игра, это помойка, патч - помойка, баланс - помойка, разрабы - помойка,'
+                          'тимейты - помойка, ты - помойка, все твоя семья оказывается тоже помойка,'
+                          'которая живёт на помойке.(Это не всё)')
+
+
 @bot.message_handler(commands=['MassEffect2'])
 def send_MassEffect2_info(message):
     bot.reply_to(message, "Mass Effect 2 — компьютерная игра в жанре ролевого боевика, разработанная канадской"
@@ -203,6 +210,11 @@ def send_stalker2008_info(message):
                           "элементами ролевой игры, разработанная украинской компанией GSC Game World и выпущенная"
                           "в России 22 августа 2008 года. Издателем в странах СНГ и Украине является GSC World"
                           "Publishing, в остальном мире игру издаёт компания Deep Silver.")
+
+
+@bot.message_handler(commands=['dotaTrueTrue'])
+def send_TrueTrueAboutDota_info(message):
+    bot.reply_to(message, 'Х**ня полная, но все играют.')
 
 
 @bot.message_handler(commands=['Fallout3'])
