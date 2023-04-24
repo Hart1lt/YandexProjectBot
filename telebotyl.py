@@ -8,7 +8,7 @@ bot = telebot.TeleBot('5990898499:AAEgSn5SOXrGD7xvaTxIR_OidqB0so35jcc')
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     photo = open('start.jpg', 'rb')
-    bot.send_photo(id, photo, caption='Привет! Я чат-бот. Введите /info, чтобы узнать больше.')
+    bot.send_photo(message.chat.id, photo, caption='Привет! Я чат-бот. Введите /info, чтобы узнать больше.')
 
 
 @bot.message_handler(commands=['info'])
