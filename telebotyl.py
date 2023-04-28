@@ -58,6 +58,17 @@ def allGame(message):
                                       'Assassin’s Creed Unity (/AssassinsCreedUnity)\n'
                                       'Dark Souls II (/DarkSoulsII)\n'
                                       'Alien: Isolation (/Alien:Isolation)\n'
+                                      'League of Legends (/LOL)'
+                                      'Counter-Strike: Global Offensive (/CSGO)'
+                                      'Valorant (/Valorant)'
+                                      'Overwatch 2 (/Overwatch2)'
+                                      'Tom Clancy’s Rainbow Six Siege (/R6S)'
+                                      'Metro Exodus (/MetroExodus)'
+                                      'Cyberpunk 2077 (/Cyberpunk2077)'
+                                      'Stray (/Stray)'
+                                      'Red Dead Redemption 2 (/RDR2)'
+                                      'MinecraftLegends (/Minecraft Legends)'
+                                      'Genshin Impact (/GenshinImpact)'
                                       'А также одна тайная команда.')
 
 
@@ -383,6 +394,88 @@ def send_AlienIsolation_info(message):
     bot.reply_to(message, "Alien: Isolation — компьютерная игра в жанре survival horror c элементами стелса"
                           " разработанная компанией Creative Assembly и изданная компанией Sega. Дистрибьютором"
                           "в России выступила компания «СофтКлаб». Выход игры состоялся 7 октября 2014 года.")
+
+
+@bot.message_handler(commands=['LOL'])
+def send_LOL_info(message):
+    bot.reply_to(message, "League of Legends, сокращённо LoL — многопользовательская компьютерная игра в жанре"
+                          "MOBA, разработанная и выпущенная американской компанией Riot Games в 2009 году для"
+                          "платформ Microsoft Windows и macOS. Игра была разработана по образу и подобию DotA —"
+                          "пользовательской карты для Warcraft III.")
+
+
+@bot.message_handler(commands=['CSGO'])
+def send_CSGO_info(message):
+    bot.reply_to(message, "Counter-Strike: Global Offensive — многопользовательская компьютерная игра,"
+                          "разработанная компаниями Valve и Hidden Path Entertainment. Выпуск игры для"
+                          "персональных компьютеров на операционных системах Windows и macOS, также игровых"
+                          "приставках Xbox 360 и PlayStation 3 состоялся 21 августа 2012 года.")
+
+
+@bot.message_handler(commands=['Valorant'])
+def send_Valorant_info(message):
+    bot.reply_to(message, "Valorant — многопользовательская компьютерная игра, разработанная и издаваемая компанией"
+                          "Riot Games. Valorant является первой игрой Riot Games в жанре шутер от первого лица.")
+
+
+@bot.message_handler(commands=['Overwatch2'])
+def send_Overwatch2_info(message):
+    bot.reply_to(message, "Overwatch 2 — многопользовательская бесплатная компьютерная игра в жанре геройского шутера"
+                          "от первого лица, разрабатываемая и издаваемая компанией Blizzard Entertainment.")
+
+
+@bot.message_handler(commands=['R6S'])
+def send_R6S_info(message):
+    bot.reply_to(message, "Tom Clancy’s Rainbow Six Siege — тактический шутер от первого лица, разработанный"
+                          "Ubisoft для Windows, Xbox One и PlayStation 4. Игра была анонсирована Ubisoft 9 июня 2014"
+                          "года на E3 и выпущена 1 декабря 2015 года, а ровно через пять лет, 1 декабря 2020 года,"
+                          "игра вышла для PlayStation 5 и Xbox Series X/S.")
+
+
+@bot.message_handler(commands=['MetroExodus'])
+def send_MetroExodus_info(message):
+    bot.reply_to(message, "Metro Exodus — компьютерная игра в жанре шутера от первого лица, разработанная украинской"
+                          "компанией 4A Games и изданная Deep Silver. Выход игры состоялся 15 февраля 2019 года для"
+                          "игровых платформ ПК, PlayStation 4 и Xbox One.")
+
+
+@bot.message_handler(commands=['Cyberpunk2077'])
+def send_Cyberpunk2077_info(message):
+    bot.reply_to(message, "Cyberpunk 2077 — компьютерная игра в жанре action-adventure в открытом мире, разработанная"
+                          "и изданная польской студией CD Projekt. Действие игры происходит в 2077 году в Найт-Сити,"
+                          "вымышленном североамериканском городе из вселенной Cyberpunk.")
+
+
+@bot.message_handler(commands=['Stray'])
+def send_Stray_info(message):
+    bot.reply_to(message, "Stray — приключенческая компьютерная игра, разработанная студией BlueTwelve Studio и"
+                          "изданная компанией Annapurna Interactive. Игра вышла 19 июля 2022 года для Windows,"
+                          "PlayStation 4 и PlayStation 5. Ранее игра была известна под названиями HK_Project и"
+                          "HK-Devblog, которые происходят от давнего блога её разработчиков.")
+
+
+@bot.message_handler(commands=['RDR2'])
+def send_RDR2_info(message):
+    bot.reply_to(message, "Red Dead Redemption 2 — компьютерная игра в жанрах action-adventure и шутера от"
+                          "третьего лица с открытым миром, разработанная Rockstar Studios и выпущенная Rockstar"
+                          "Games для консолей PlayStation 4 и Xbox One 26 октября 2018 года и для персональных"
+                          "компьютеров под управлением Windows 5 ноября 2019 года.")
+
+
+@bot.message_handler(commands=['MinecraftLegends'])
+def send_MinecraftLegends_info(message):
+    bot.reply_to(message, "Minecraft Legends — компьютерная стратегическая игра, разработанная Mojang Studios и"
+                          "Blackbird Interactive и изданная Xbox Game Studios. Релиз игры состоялся 18 апреля 2023"
+                          "года для Windows, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S и Nintendo"
+                          "Switch. Это спин-офф Minecraft.")
+
+
+@bot.message_handler(commands=['GenshinImpact'])
+def send_GenshinImpact_info(message):
+    bot.reply_to(message, "Genshin Impact — компьютерная игра в жанре action-adventure с открытым миром и"
+                          "элементами RPG, разработанная китайской компанией miHoYo Limited. Игра распространяется"
+                          "посредством цифровой дистрибуции по модели free-to-play, но имеет внутриигровой магазин,"
+                          "использующий реальную валюту.")
 
 
 @bot.message_handler(func=lambda message: True)
